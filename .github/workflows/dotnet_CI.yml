@@ -31,5 +31,8 @@ jobs:
         with: 
           dotnet-version: '5.0.x'
           
+      - name: Connect Project
+        run: dotnet add AmazooApp/
+        
       - name: Build
         run: dotnet build --configuration Release --no-restore
