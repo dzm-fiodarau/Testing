@@ -35,4 +35,4 @@ jobs:
         run: dotnet restore AmazooApp/AmazooApp.sln
         
       - name: Build
-        run: dotnet build AmazooApp/AmazooApp.csproj --configuration Release --no-restore
+        run: dotnet build AmazooApp/AmazooApp/AmazooApp.csproj --configuration Release --no-restore
