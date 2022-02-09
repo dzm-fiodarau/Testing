@@ -32,4 +32,4 @@ jobs:
           dotnet-version: '5.0.x'
           
       - name: Build
-        run: dotnet build 'dzm-fiodarau/Testing/AmazooApp/AmazooApp.sln' --configuration Release --no-restore
+        run: dotnet build 'dzm-fiodarau/Testing/AmazooApp' --configuration Release --no-restore
