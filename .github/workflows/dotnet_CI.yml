@@ -32,7 +32,7 @@ jobs:
           dotnet-version: '5.0.x'
           
       - name: Restore
-        run: dotnet restore ./AmazooApp.sln
+        run: dotnet restore AmazooApp/AmazooApp.sln
         
       - name: Build
         run: dotnet build AmazooApp/AmazooApp.csproj --configuration Release --no-restore
