@@ -32,7 +32,7 @@ jobs:
           dotnet-version: '5.0.x'
           
       - name: Connect Project
-        run: dotnet add AmazooApp/
+        run: dotnet add reference 'dzm-fiodarau/Testing/AmazooApp/'
         
       - name: Build
         run: dotnet build --configuration Release --no-restore
