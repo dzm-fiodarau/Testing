@@ -36,3 +36,6 @@ jobs:
         
       - name: Build
         run: dotnet build AmazooApp/AmazooApp/AmazooApp.csproj --configuration Release --no-restore
+      
+      - name: Run App
+        run: dotnet run AmazooApp/AmazooApp/AmazooApp.csproj --configuration Release --no-restore
