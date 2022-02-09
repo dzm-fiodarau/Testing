@@ -31,5 +31,8 @@ jobs:
         with: 
           dotnet-version: '5.0.x'
           
+      - name: Restore
+        run: dotnet restore ./AmazooApp.sln
+        
       - name: Build
-        run: dotnet build 'dzm-fiodarau/Testing/AmazooApp' --configuration Release --no-restore
+        run: dotnet build AmazooApp/AmazooApp.csproj --configuration Release --no-restore
